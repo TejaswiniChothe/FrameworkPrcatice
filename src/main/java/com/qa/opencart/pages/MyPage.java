@@ -5,7 +5,7 @@ public class MyPage {
 	public void Utest()
 	{
 		int i=20;
-    String name=10;
+    String name="Ash";
 		System.out.println("Ash Code");
 	}
 }
