@@ -2,7 +2,7 @@ package com.qa.opencart.constant;
 
 public class AppConstant {
 
-	public final static String LOGIN_PAGE_TITLE = "Account LoginS";
+	public final static String LOGIN_PAGE_TITLE = "Account Login";
 	public final static String LOGIN_PAGE_URL_FRACTIONVALUE = "route=account/login";
 	public final static String HOME_PAGE_TITLE = "My Account";
 	public final static String HOME_PAGE_URL_FRACTIONVALUE = "route=account/account";
