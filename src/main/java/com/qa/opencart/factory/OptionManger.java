@@ -18,7 +18,7 @@ public class OptionManger {
 
 	public ChromeOptions getChromeOptions() {
 		co=new ChromeOptions();
-		if (Boolean.parseBoolean(System.getProperty("headless"))) {
+		if (Boolean.parseBoolean(prop.getProperty("headless"))) {
 			System.out.println("==Running the chrome browser in headless mode==");
 			co.addArguments("--headless");
 		}
@@ -30,7 +30,7 @@ public class OptionManger {
 	}
 	public FirefoxOptions getFirefoxOptions() {
 		fo=new FirefoxOptions();
-		if (Boolean.parseBoolean(System.getProperty("headless"))) {
+		if (Boolean.parseBoolean(prop.getProperty("headless"))) {
 			System.out.println("==Running the FireFox browser in headless mode==");
 			fo.addArguments("--headless");
 		}
@@ -43,7 +43,7 @@ public class OptionManger {
 	public EdgeOptions getEdgeOptions() {
 		eo=new EdgeOptions();
 
-		if (Boolean.parseBoolean(System.getProperty("headless"))) {
+		if (Boolean.parseBoolean(prop.getProperty("headless"))) {
 			System.out.println("==Running the Edge browser in headless mode==");
 			eo.addArguments("--headless");
 		}
