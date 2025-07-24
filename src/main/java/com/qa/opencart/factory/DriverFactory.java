@@ -67,8 +67,12 @@ public class DriverFactory {
 
 	public Properties initProp() {
 		String envName = System.getProperty("env");
+		String headless = System.getProperty("headless");
+
 		//System.out.println("Running the test suit on env : " + envName);
 		log.info("Running the test suit on env : " + envName);
+		log.info("Running the on browser mode : " + headless);
+
 		FileInputStream ip = null;
 		prop = new Properties();
 		try {
