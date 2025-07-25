@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="TestNG openCart Suite" verbose="3" parallel="tests"
+	thread-count="3">
+	<listeners>
+		<listener
+			class-name="com.aventstack.chaintest.plugins.ChainTestListener" />
+		<listener
+			class-name="com.qa.opencart.listeners.TestAllureListener" />
+		<listener
+			class-name="com.qa.opencart.listeners.AnnotationTransformer" />
+	</listeners>
+
+	<test name="Login page Test_chrome">
+	<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.qa.opencart.tests.LoginPageTest" />
+		</classes>
+	</test>
+<!-- 	<test name="Home page Test_chrome"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.qa.opencart.tests.HomePageTest" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- 	<test name=".ProductInfo page Test_chrome"> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.qa.opencart.tests.ProductInfoPageTest" /> -->
+<!-- 		</classes> -->
+<!-- 	</test>  -->
+</suite>
+
+
+	
