@@ -26,6 +26,10 @@ public class OptionManger {
 			System.out.println("==Running the chrome browser in incognito mode==");
 			co.addArguments("--incognito");
 		}
+		if (Boolean.parseBoolean(prop.getProperty("remote"))) {
+			System.out.println("==Running the chrome browser in Remote==");
+			co.setCapability("browserName", "chrome");
+		}
 		return co;
 	}
 	public FirefoxOptions getFirefoxOptions() {
@@ -37,6 +41,10 @@ public class OptionManger {
 		if (Boolean.parseBoolean(prop.getProperty("incognito"))) {
 			System.out.println("==Running the FireFox browser in incognito mode==");
 			fo.addArguments("--incognito");
+		}
+		if (Boolean.parseBoolean(prop.getProperty("remote"))) {
+			System.out.println("==Running the firefox browser in Remote==");
+			fo.setCapability("browserName", "firefox");
 		}
 		return fo;
 	}
@@ -50,6 +58,10 @@ public class OptionManger {
 		if (Boolean.parseBoolean(prop.getProperty("incognito"))) {
 			System.out.println("==Running the Edge browser in incognito mode==");
 			eo.addArguments("--inPrivate");
+		}
+		if (Boolean.parseBoolean(prop.getProperty("edge"))) {
+			System.out.println("==Running the edge browser in Remote==");
+			eo.setCapability("browserName", "edge");
 		}
 		return eo;
 	}
