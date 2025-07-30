@@ -12,24 +12,24 @@
 	</listeners>
 
 	<test name="Login page Test_chrome">
-	<parameter name="browser" value="chrome" />
+		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.qa.opencart.tests.LoginPageTest" />
 		</classes>
 	</test>
 	<test name="Login page Test_firefox">
-	<parameter name="browser" value="firefox" />
+		<parameter name="browser" value="firefox" />
+
 		<classes>
 			<class name="com.qa.opencart.tests.LoginPageTest" />
 		</classes>
 	</test>
 	<test name="Login page Test_edge">
-	<parameter name="browser" value="edge" />
+		<parameter name="browser" value="edge" />
 		<classes>
 			<class name="com.qa.opencart.tests.LoginPageTest" />
 		</classes>
 	</test>
-
 </suite>
 
 

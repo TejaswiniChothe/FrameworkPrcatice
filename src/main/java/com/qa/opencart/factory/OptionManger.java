@@ -62,6 +62,7 @@ public class OptionManger {
 		if (Boolean.parseBoolean(prop.getProperty("edge"))) {
 			System.out.println("==Running the edge browser in Remote==");
 			eo.setCapability("browserName", "edge");
+			
 		}
 		return eo;
 	}
