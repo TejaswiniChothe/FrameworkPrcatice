@@ -17,11 +17,11 @@
 			<class name="com.qa.opencart.tests.LoginPageTest" />
 		</classes>
 	</test>
-	<test name="Login page Test_firefox">
+	<test name="ProductInfoPage Test _firefox">
 		<parameter name="browser" value="firefox" />
 
 		<classes>
-			<class name="com.qa.opencart.tests.LoginPageTest" />
+			<class name="com.qa.opencart.tests.ProductInfoPageTest" />
 		</classes>
 	</test>
 	<test name="Login page Test_edge">
